@@ -16,7 +16,7 @@
 - Considerate expansion of the software to also make it a research based program with tools like wikipedia, dictionary, text analysis etc..
 - The Program is incomplete as of 12-1-2021 [Changes are to be committed]
 
-## Imports Made in this Program:
+## Modules Used:
 - math module
 - pyttsx3 (python text-to-speech-module)
 #### Modules Coming Soon
