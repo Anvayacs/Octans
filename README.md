@@ -2,7 +2,7 @@
 
 [Website][<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://github.com/the-protagonist-view)
 
-## I am Anvay Arora, a student developer
+## I am Anvay, a student developer
 
 - 🔭 I just launched my first Repository on github
 - 🌱 I’m currently learning everything 
@@ -15,6 +15,13 @@
 - Currently Programmed to formulas of India Grade-10
 - Considerate expansion of the software to also make it a research based program with tools like wikipedia, dictionary, text analysis etc..
 - The Program is incomplete as of 12-1-2021 [Changes are to be committed]
+
+## Imports Made in this Program:
+- math module
+- pyttsx3 (python text-to-speech-module)
+# Modules Coming Soon
+- speech_recognition
+- pyaudio
 
 ### Connect with me:
 
