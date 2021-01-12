@@ -1,6 +1,6 @@
-### 'OCTANS, The Modern Mathematical Tool' Created by [the-protagonist][website]
+### 'OCTANS: The Modern Mathematical Tool' Created by [the-protagonist][website]
 
-[![Website](https://img.shields.io/website?label=codeSTACKr.com&style=for-the-badge&url=https%3A%2F%2Fcodestackr.com)](https://github.com/the-protagonist-view)
+[![Website][<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://github.com/the-protagonist-view)
 
 ## I am Anvay Arora, a student developer
 
