@@ -1,6 +1,6 @@
 ### 'OCTANS:The Modern Mathematical Tool' Created by [the-protagonist][website]
 
-[Website][<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://github.com/the-protagonist-view)
+[Github Profile][<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />](https://github.com/the-protagonist-view)
 
 ## I am Anvay, a student developer
 
