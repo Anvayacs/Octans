@@ -13,7 +13,7 @@ def speak(audio):
     engine.runAndWait()
 
 #To find out which formula is to be solved(soon to be voice based)
-query = input("Which formula do you want to solve>> ")
+query = input("Which chapter or formula do you want to solve>> ")
     
 if query == 'angle sum property': # Angle Sum Property Basic theorem
     speak("Please input the angle you need to assess") #speech introduction 
@@ -165,8 +165,8 @@ if query == 'surface area' or 'tsa' or 'csa' or 'volume': # Surface Area and vol
             rcyl = int(input("What is the value of the radius>> "))
             hcyl = int(input("What is the value of the height>> "))
 
-if query == 'arithmetic progression' or 'ap': # Arithmetic Progression 
-    ap = input("What do you need to find out (sum, first term, last term or any term)>> ")  
+if query == 'arithmetic progression' or 'ap' or 'AP': # Arithmetic Progression 
+    ap = input("What do you need to find out (sum, first term, last term, or any term)>> ")  
     
     if ap == 'sum': # Possibility 1- Sum of 'N' terms
         nterms = int(input("Sum of how many terms is required>> "))
@@ -175,8 +175,17 @@ if query == 'arithmetic progression' or 'ap': # Arithmetic Progression
         sumot = ((nterms/2)) * (2*aterm + (nterms-1) * dterm)
         print("Steps to solve")
         print("Sum of" ,nterms, " is = N/2 x (2a + (N-1) x d)")
-        print("Sum of" ,nterms, " is = " ,nterms,"/2" " x " "(2 x" ,aterm, "+" "(" ,nterms, "-1)" "x" ,dterm,)
+        print("Sum of" ,nterms, "terms is = " ,nterms,"/2" " x " "(2 x" ,aterm, "+" "(" ,nterms, "-1)" "x" ,dterm,)
         print ("The sum of " ,nterms, " term is " ,sumot,)
+    
+    elif ap == 'first term': #Possibility 1 - first term of an AP
+        gterm = int(input("What is the given term>>"))
+        numterm = int(input("which number of term is given ? >>")
+        dterm = int (input("What is the difference between the terms>>"))
+        fterm = gterm - ((numterm-1)*dterm)
+        print('Steps to solve')
+        print("firsrt term = give  term - (number of giver term - 1)*d")
+        print( 'The first term is' fterm )
 
 
 
