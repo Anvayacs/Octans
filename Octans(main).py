@@ -185,11 +185,11 @@ if query == 'arithmetic progression' or 'ap' or 'AP': # Arithmetic Progression
         fterm = gterm - ((numterm-1)*dterm)
         print('Steps to solve')
         print("firsrt term = give  term - (number of giver term - 1)*d")
-        print( 'The first term is' fterm )
+        print( 'The first term is' ,fterm, )
 
-
-
+    elif ap == "last term":  #Possibilty 1 - last term of ap when a and d is given
+        fterm = int(input('what is the first term of the AP>>'))
+        dterm = int(input("what is the difference between terms>>"))
+        numterms = int(input("what is the number of terms in the ap>>")) 
+        lterm = fterm + (numterm-1)*dterm  
     
-    
-
-
