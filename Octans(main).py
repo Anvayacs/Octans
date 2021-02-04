@@ -180,7 +180,7 @@ if query == 'arithmetic progression' or 'ap' or 'AP': # Arithmetic Progression
     
     elif ap == 'first term': #Possibility 1 - first term of an AP
         gterm = int(input("What is the given term>>"))
-        numterm = int(input("which number of term is given ? >>")
+        numterm = int(input("which number of term is given ? >>"))
         dterm = int (input("What is the difference between the terms>>"))
         fterm = gterm - ((numterm-1)*dterm)
         print('Steps to solve')
