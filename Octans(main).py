@@ -1,9 +1,11 @@
 # All imports
 import pyttsx3
 import math
-import angsum
+import asumpy3
+import wikipedia
+import mpointpy3
 
-#Python Text-To-Speech EngineX` 
+#Python Text-To-Speech EngineX 
 engine = pyttsx3.init()
 VoiceRate = 190     
 engine.setProperty('rate', VoiceRate,)
@@ -13,23 +15,36 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-#To find out which formula is to be solved(soon to be voice based)
-
 
 if __name__ == '__main__':
-  speak("Octans initialized")
+  speak("Octans initialized")                           
 
-  while True:
+  while True:     
+    #To find out which formula is to be solved(soon to be voice based)  
     query = input("Which formula do you want to solve>> ")
    
     if query == 'angle sum property':
         asp = input("Which angle do you need to assess>> ")
         if asp == 'a':
-            angsum.angA()
+            asumpy3.asumpy3.angA()
+            continue
         if asp == 'b':
-            angsum.angB()
+            asumpy3.asumpy3.angB()
+            continue
         if asp == 'c':
-            angsum.angC()
+            asumpy3.asumpy3.angC()
+            continue
+    else:
+        quit()
+
+    if query == 'midpoint formula' or 'midpoint f': # Arithmetic Progression 
+        midf = input("What do you need to find out (midpoint, midpoint on x axis or midpoint on y axis)>> ") 
+        if midf == 'midpoint':
+            mpointpy3.midpoint()     
+        if midf == 'midpoint on x axis' or 'midpoint on x':
+            mpointpy3.midpointx()     
+        if midf == 'midpoint on y axis' or 'midpoint on y':
+            mpointpy3.midpointy()     
 
     else:
         quit()
@@ -50,5 +65,4 @@ if __name__ == '__main__':
 
     
     
-
 
