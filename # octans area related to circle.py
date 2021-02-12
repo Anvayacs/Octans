@@ -12,12 +12,12 @@ query = input("what do you want ot solve>>")
 if query == 'area realted to circle' or 'circle related area':
     carea = input("What do ypu want to find out(area of a circle, circumference, radius, area of a sector,\n circumference of a sector, angle of a sector>>)")
 
-    if carea == "area of circle" or "circle area":
+    if carea == "area of a circle":
         qtype = input("Is the circumference given>>")
 
-        if qtype == "Yes" or "yes":
+        if qtype == "yes":
             circum= float(input("what is the circumference>>"))
-            pi = int(input("What should pi be taken as>>"))
+            pi = (input("What should pi be taken as>>"))
 
             if pi == '22/7':
                 r = circum*(7/22)*(1/2)
@@ -26,21 +26,25 @@ if query == 'area realted to circle' or 'circle related area':
 
             elif pi == "3.14":
                 r = circum*(1/3.14)*(1/2)
-                area = (22/7)*(r**2)
+                area = (3.14)*(r**2)
                 print(f"The area is {area}")
             else:
                 print("Please enter a valid value of pi")         
         
-        elif qtype == 'No' or 'no':
-            r = input("What is the radius>>")
+        elif qtype == 'no':
+            r = float(input("What is the radius>>"))
             pi = (input("What should pi be taken as>>"))
             if pi == '22/7':
-                area = (22/7)*(r**2)
+                area = (22/7)*(r*r)
+                print(f"The area is {area}")
 
             elif pi == "3.14":
                     area = (3.14)*(r**2)
+                    print(f"The area is {area}")
+            else:
+                print("enter a valid value of pi")
         
-    if carea == "circumference":
+    elif carea == "circumference":
         qtype= input("Is the area given>> ")
         
         if qtype == "yes":
@@ -49,14 +53,27 @@ if query == 'area realted to circle' or 'circle related area':
 
             if pi == '22/7':
                 r = area *(7/22)**(0.5)
-                circum = 2*(22/7)*(r) 
+                circum = 2*(22/7)*(r)
+                print(f"The circumference is {circum}") 
             elif pi == '3.14':
                 r = area*(1/3.14)**(0.5)
-                circum = 2*(3.14)*(r) 
+                circum = 2*(3.14)*(r)
+                print(f"The circumference is {circum}") 
             else:
                 print("Please enter a valid value of pi")                    
-    
-    if carea == "radius":
+        if qtype == "no":
+            r = float(input("What is the radius>>")) 
+            pi = input("What is the value of pi>>")
+
+            if pi == '22/7':
+                circum = 2*(22/7)*(r)
+                print(f"The circumference is {circum}") 
+            elif pi == '3.14':
+                circum = 2*(3.14)*(r)
+                print(f"The circumference is {circum}") 
+            else:
+                print("Please enter a valid value of pi") 
+    elif carea == "radius":
         qtype = input("Is the area given>> ")
         if qtype == "yes":
             area = input ("What is the area?")
@@ -84,7 +101,7 @@ if query == 'area realted to circle' or 'circle related area':
             else:
                 print("Please enter a valid value of pi")          
 
-    if carea == "area of sector":
+    elif carea == "area of sector":
         theta = input("What is the value of tehta or angle>>")
         r = input("What is the radius>>")
         pi = input("What is the value of pi>>")
@@ -98,7 +115,7 @@ if query == 'area realted to circle' or 'circle related area':
         else:
             print("Please enter a valid value of pi") 
 
-    if carea == "cicumference of sector":
+    elif carea == "cicumference of sector":
         theta = input("What is the value of tehta or angle>>")
         r = input("What is the radius>>")
         pi = input("What is the value of pi>>")
@@ -112,7 +129,7 @@ if query == 'area realted to circle' or 'circle related area':
         else:
             print("Please enter a valid value of pi") 
 
-    if carea == "angle of sector":
+    elif carea == "angle of sector":
         qtype = input("is the area given>>")
         if qtype == "yes":
             area = input("what is the area>>")
