@@ -52,12 +52,12 @@ if query == 'area realted to circle' or 'circle related area':
             pi = input("What is the value of pi>>")
 
             if pi == '22/7':
-                r = area *(7/22)**(0.5)
+                r = (area *(7/22))**(0.5)
                 circum = 2*(22/7)*(r)
                 print(f"The circumference is {circum}") 
             elif pi == '3.14':
-                r = area*(1/3.14)**(0.5)
-                circum = 2*(3.14)*(r)
+                r = (area*(1/3.14))**(0.5)
+                circum = (2*(3.14))*(r)
                 print(f"The circumference is {circum}") 
             else:
                 print("Please enter a valid value of pi")                    
@@ -72,7 +72,8 @@ if query == 'area realted to circle' or 'circle related area':
                 circum = 2*(3.14)*(r)
                 print(f"The circumference is {circum}") 
             else:
-                print("Please enter a valid value of pi") 
+                print("Please enter a valid value of pi")
+
     elif carea == "radius":
         qtype = input("Is the area given>> ")
         if qtype == "yes":
