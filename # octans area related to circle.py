@@ -9,7 +9,7 @@
 #circumference when area given
 
 query = input("what do you want ot solve>>")
-if query == 'area realted to circle' or 'circle related area':
+elif query == 'area realted to circle' or 'circle related area':
     carea = input("What do ypu want to find out(area of a circle, circumference, radius, area of a sector,\n circumference of a sector, angle of a sector>>)")
 
     if carea == "area of a circle":
