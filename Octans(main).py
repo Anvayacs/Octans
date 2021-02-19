@@ -338,7 +338,7 @@ elif query == 'surface area' or 'tsa' or 'csa' or 'volume': # Surface Area and v
                 print(f"The total surface area is {volume}")
             else:
                 print("Please enter a valid value")
-
+0
 elif query == 'arithmetic progression' or 'ap' or 'AP': # Arithmetic Progression 
     ap = input("What do you need to find out (sum, first term, last term, or any term)>> ")
 
