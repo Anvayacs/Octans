@@ -158,13 +158,187 @@ elif query == 'surface area' or 'tsa' or 'csa' or 'volume': # Surface Area and v
                 aside = volcubea**(1./3.)
                 print ("The edge in this instance is " ,tsacub)
         
-
     elif sa == 'cylinder':
-        tysa2= input("Which formula would u like to use (tsa/csa/volume)>> ")
-        if tysa2 == 'tsa':
-            rcyl = int(input("What is the value of the radius>> "))
-            hcyl = int(input("What is the value of the height>> "))
-el
+        qtype = input("Which formula would u like to use (tsa/csa/volume)>> ")
+        if qtype == 'tsa':
+            r = float(input("What is the value of the radius>> "))
+            h = float(input("What is the value of the height>> "))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                tsa = 2*(22/7)*r*(r+h)
+                print(f"The total surface area is {tsa}")
+            elif pi == '3.14':
+                tsa = 2*(3.14)*r*(r+h)
+                print(f"The total surface area is {tsa}")
+            else:
+                print("Please enter a valid value")
+
+        if qtype == 'csa':
+
+            r = float(input("What is the value of the radius>> "))
+            h = float(input("What is the value of the height>> "))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                csa = 2*(22/7)*r*(h)
+                print(f"The total surface area is {csa}")
+            elif pi == '3.14':
+                csa = 2*(3.14)*r*(h)
+                print(f"The total surface area is {csa}")
+            else:
+                print("Please enter a valid value")
+        
+        if qtype == 'volume':
+            r = float(input("What is the value of the radius>> "))
+            h = float(input("What is the value of the height>> "))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                volume = (22/7)*(r*r)*h
+                print(f"The total surface area is {volume}")
+            elif pi == '3.14':
+                volume = (3.14)*(r*r)*h
+                print(f"The total surface area is {volume}")
+            else:
+                print("Please enter a valid value")
+  
+    elif sa == 'cone':
+        qtype = input("Which formula would u like to use (tsa/csa/volume)>> ")
+        if qtype == 'tsa':
+            qtype2 = input('Is slant height given>>')
+            if qtype2 == 'no':
+                r = float(input("What is the value of the radius>> "))
+                h = float(input("What is the value of the height>> "))
+                l = ((h**2)+(r**2))**0.5
+                pi = input('what is the value of pi>> ')
+                if pi == '22/7':
+                    tsa = (22/7)*r*(r+l)
+                    print(f"The total surface area is {tsa}")
+                elif pi == '3.14':
+                    tsa = (3.14)*r*(r+l)
+                    print(f"The total surface area is {tsa}")
+                else:
+                    print("Please enter a valid value")
+
+            if qtype2 == 'yes':
+                r = float(input("What is the value of the radius>> "))
+                l = float(input('What is the slant height>> '))
+                pi = input('what is the value of pi>> ')
+                if pi == '22/7':
+                    tsa = (22/7)*r*(r+l)
+                    print(f"The total surface area is {tsa}")
+                elif pi == '3.14':
+                    tsa = (3.14)*r*(r+l)
+                    print(f"The total surface area is {tsa}")
+                else:
+                    print("Please enter a valid value")
+        
+        if qtype == 'csa':
+
+            qtype2 = input('Is slant height given>>')
+            if qtype2 == 'no':
+                r = float(input("What is the value of the radius>> "))
+                h = float(input("What is the value of the height>> "))
+                l = ((h**2)+(r**2))**0.5
+                print(l)
+                pi = input('what is the value of pi>> ')
+                if pi == '22/7':
+                    csa = (22/7)*r*l
+                    print(f"The lateral surface area is {csa}")
+                elif pi == '3.14':
+                    csa = (3.14)*r*l
+                    print(f"The lateral surface area is {csa}")
+                else:
+                    print("Please enter a valid value")
+
+            if qtype2 == 'yes':
+                r = float(input("What is the value of the radius>> "))
+                l = float(input('What is the slant height'))
+                pi = input('what is the value of pi>> ')
+                if pi == '22/7':
+                    csa = (22/7)*r*l
+                    print(f"The curved surface area is {csa}")
+                elif pi == '3.14':
+                    csa = (3.14)*r*l
+                    print(f"The curved surface area is {csa}")
+                else:
+                    print("Please enter a valid value")
+        
+        if qtype == 'volume':
+            r = float(input("What is the value of the radius>> "))
+            h = float(input("What is the value of the height>> "))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                volume = (1/3)*(22/7)*(r*r)*h
+                print(f"The volume surface area is {volume}")
+            elif pi == '3.14':
+                volume = (1/3)*(3.14)*(r*r)*h
+                print(f"The volume surface area is {volume}")
+            else:
+                print("Please enter a valid value")
+
+    elif sa ==  'sphere':
+        qtype = input("Which formula would u like to use (surface area/volume)>> ")
+        if qtype == 'surface area':
+            r = float(input('What is the radius>> '))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                tsa = 4*(22/7)*(r**2)
+                print(f"The total surface area is {tsa}")
+            elif pi == '3.14':
+                tsa = (3.14)*4*(r**2)
+                print(f"The total surface area is {tsa}")
+            else:
+                print("Please enter a valid value")
+            
+        if qtype == 'volume':
+            r = float(input('What is the radius>> '))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                volume = (4/3)*(22/7)*(r**3)
+                print(f"The total surface area is {volume}")
+            elif pi == '3.14':
+                volume = (4/3)*(3.14)*(r**3)
+                print(f"The total surface area is {volume}")
+            else:
+                print("Please enter a valid value")
+
+    elif sa == 'hemisphere':
+        qtype = input("Which formula would u like to use (tsa/csa/volume)>> ")
+        if qtype == 'tsa':
+            r = float(input('What is the radius>> '))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                tsa = 3*(22/7)*(r**2)
+                print(f"The total surface area is {tsa}")
+            elif pi == '3.14':
+                tsa = (3.14)*3*(r**2)
+                print(f"The total surface area is {tsa}")
+            else:
+                print("Please enter a valid value")
+
+        if qtype == 'csa':
+            r = float(input('What is the radius>> '))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                csa = 2*(22/7)*(r**2)
+                print(f"The total surface area is {csa}")
+            elif pi == '3.14':
+                csa = (3.14)*2*(r**2)
+                print(f"The total surface area is {csa}")
+            else:
+                print("Please enter a valid value")
+            
+        if qtype == 'volume':
+            r = float(input('What is the radius>> '))
+            pi = input('what is the value of pi>> ')
+            if pi == '22/7':
+                volume = (2/3)*(22/7)*(r**3)
+                print(f"The total surface area is {volume}")
+            elif pi == '3.14':
+                volume = (2/3)*(3.14)*(r**3)
+                print(f"The total surface area is {volume}")
+            else:
+                print("Please enter a valid value")
+
 elif query == 'arithmetic progression' or 'ap' or 'AP': # Arithmetic Progression 
     ap = input("What do you need to find out (sum, first term, last term, or any term)>> ")
 
