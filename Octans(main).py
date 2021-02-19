@@ -4,7 +4,10 @@ import math
 import asumpy3
 import wikipedia
 import mpointpy3
-
+from arithpro1 import ap_sum, ap_anyTerm, ap_firstTerm, ap_lastTerm 
+import cirRelArea
+import sys, os 
+    
 #Python Text-To-Speech EngineX 
 engine = pyttsx3.init()
 VoiceRate = 190     
@@ -14,6 +17,9 @@ engine.setProperty('rate', VoiceRate,)
 def speak(audio): 
     engine.say(audio)
     engine.runAndWait()
+
+def firstterm():
+    ap_firstTerm()
 
 
 if __name__ == '__main__':
@@ -34,10 +40,10 @@ if __name__ == '__main__':
         if asp == 'c':
             asumpy3.asumpy3.angC()
             continue
-    else:
-        quit()
+        else:
+            quit()
 
-    if query == 'midpoint formula' or 'midpoint f': # Arithmetic Progression 
+    if query == 'midpoint formula' or 'midpoint1': 
         midf = input("What do you need to find out (midpoint, midpoint on x axis or midpoint on y axis)>> ") 
         if midf == 'midpoint':
             mpointpy3.midpoint()     
@@ -46,5 +52,37 @@ if __name__ == '__main__':
         if midf == 'midpoint on y axis' or 'midpoint on y':
             mpointpy3.midpointy()     
 
-    else:
-        quit()
+        else:
+            quit()
+    
+    if query == 'ap' or 'arithmetic progression': 
+        apv = input("What do you need to find out (first term.......)>> ") 
+
+        if apv == 'first term':
+            firstterm()
+        
+        else:
+            quit()
+
+    
+
+    
+    
+                
+
+
+
+
+
+    
+
+   
+   
+
+    
+
+
+
+    
+    
+
