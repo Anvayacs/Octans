@@ -4,11 +4,10 @@
 
 ## I am Anvay, a student developer
 
-- 🔭 I just launched my first Repository on github
 - 🌱 I’m currently learning everything 
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 Looking to start my own company 
-
+-  ❕  Working on a big project
 ### What is Octans??
 - Named after the constellation, Octans is a mathematics software designed to give students a tool to solve mathematical formulas that we are taught over the years.
 - Octans considers all the possibilities of any given formula and provides a solution according to it. It does not just give answers to a formula, it provides steps to how the formula was solved.
@@ -19,6 +18,9 @@
 ## Modules Used:
 - math module
 - pyttsx3 (python text-to-speech-module)
+- mpointpy3 (self)
+- asumpy3 (self)
+
 #### Modules Coming Soon
 - speech_recognition
 - pyaudio
