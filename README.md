@@ -13,7 +13,7 @@
 - Octans considers all the possibilities of any given formula and provides a solution according to it. It does not just give answers to a formula, it provides steps to how the formula was solved.
 - Currently Programmed to formulas of India Grade-10
 - Considerate expansion of the software to also make it a research based program with tools like wikipedia, dictionary, text analysis etc..
-- The Program is incomplete as of 12-1-2021 [Changes are to be committed]
+- The Program is incomplete as of 27-2-2021 [Changes are to be committed]
 
 ## Modules Used:
 - math module
