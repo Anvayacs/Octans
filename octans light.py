@@ -37,33 +37,47 @@ if query == 'light':
                 v = (-m)*u
                 print(f'the value of image distance is {round(v)} units')
         if qtype3 == 'lens':
-            """
+            
             if qtype2 == 'no':
                 u = float(input('please enter object distance>> '))
                 f = float(input('please enter the focal length>> ')) 
-                v = 1/((1/u)+(1/f))
+                v = 1/((1/f)+(1/u))
                 print(f'the value of image distance is {round(v)} units')
             if qtype2 == 'yes':
                 m = float(input('what is the magnification>> '))
                 u = float(input('please enter object distance>> '))
                 v = (m)*u
                 print(f'the value of image distance is {round(v)} units')
-            """    
+                
     if qtype == 'object distance':
+        qtype3 = input('is it a mirror or a lens>> ')
         qtype2 = input('Is the magnification given>> (yes or no) ')
-        optic() 
-        if qtype2 == 'no':
-            v = float(input('please enter image distance>> '))
-            f = int(input('please enter the focal length>> ')) 
-            u = 1/((1/f)-(1/v))
-            print(f'the value of object distance is {u}')
+        optic()
+        if qtype3 == 'mirror': 
+            if qtype2 == 'no':
+                v = float(input('please enter image distance>> '))
+                f = int(input('please enter the focal length>> ')) 
+                u = 1/((1/f)-(1/v))
+                print(f'the value of object distance is {round(u)}')
 
-        if qtype2 == 'yes':
-            m = float(input('what is the magnification>> '))
-            v = float(input('please enter image distance>> '))
-            u = (-m)*v
-            print(f'the value of object distance is {u}')
+            if qtype2 == 'yes':
+                m = float(input('what is the magnification>> '))
+                v = float(input('please enter image distance>> '))
+                u = (-v)/m
+                print(f'the value of object distance is {round(u)}')
+
+        if qtype3 == 'lens': 
+            if qtype2 == 'no':
+                v = float(input('please enter image distance>> '))
+                f = float(input('please enter the focal length>> ')) 
+                u = -1/((1/f)-(1/v))
+                print(f'the value of object distance is {round(u)} units')
+            if qtype2 == 'yes':
+                m = float(input('what is the magnification>> '))
+                v = float(input('please enter image distance>> '))
+                u = v/m
+                print(f'the value of image distance is {round(u)} units')
 
     if qtype == 'focal length':
-        pass
+        
 
