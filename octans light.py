@@ -1,19 +1,3 @@
-"""
-#  ask for what do you want to find 
-#  v u f magnification power
-#  v
-#  if magnification given?
-#  mirror or lens?
-#  u  
-#  if magnification is given ?
-#  mirror or lense?
- f 
- is v and u given or dioptre?
- mirror or lens
- ask what is given for magnification
- ask if height is given or distance is given
- power
- """
 def optic():
     print('Please enter all the values according to the type of mirror/lens')
 
@@ -79,5 +63,40 @@ if query == 'light':
                 print(f'the value of image distance is {round(u)} units')
 
     if qtype == 'focal length':
+        qtype2 = input('Is the device a mirror or a lens>>> ')
         
+        if qtype2 == 'mirror':
+            v = int(input('Please enter the image distance>>>' )) 
+            u = int(input('Please enter the object distance>>>' ))
+            f = 1/((1/v) + (1/u))   
+            print(f'the focal lenght of the mirror is {f}')
+        if qtype2 == 'lens':
+            v = int(input('Please enter the image distance>>>' )) 
+            u = int(input('Please enter the object distance>>>' ))
+            f = 1/((1/v) - (1/u))   
+            print(f'the focal lenght of the lens is {f}')
 
+    if qtype == 'magnification':
+        qtype3 = input('are heights given>>>(yes/no)')
+        if qtype3 == 'yes':
+            imageHeight = int(input('please enter image height>> '))
+            objectHeight = int(input('please enter image height>> '))
+            m = imageHeight/objectHeight
+            print('the magnification is' ,m)
+        else:
+            qtype2 = input('Is the device a mirror or a lens>>> ')
+            if qtype2 == 'mirror':
+                v = int(input('Please enter the image distance>>>' )) 
+                u = int(input('Please enter the object distance>>>' ))
+                m = -v/u 
+                print(f'the focal lenght of the mirror is {m}')
+            if qtype2 == 'lens':
+                v = int(input('Please enter the image distance>>>' )) 
+                u = int(input('Please enter the object distance>>>' ))
+                m = v/u  
+                print(f'the focal lenght of the lens is {m}')
+
+    if qtype == 'power':
+        f = int(input('Please enter focal length in meters'))
+        d = 1/f 
+        print(f'the focal lenght of the mirror is {d} dioptres')
